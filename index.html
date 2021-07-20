@@ -1,0 +1,48 @@
+<html>
+    <head>
+<title>pizzeria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script rel="stylesheet" scr="main.js"></script>
+    </head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#">pizzeria</a>
+        <div class="topnav-right">
+            <a href="#viewblock"></a>
+            <a href="#addtoping"></a>
+            </div>
+    </div>
+    <div class="row" id="viewblock">
+        <div class="img_div">
+            <img class="img-responsive" src="pizzajpg.jpeg">
+            <!--add menu_div here and creat button to call get menu()-->
+        </div>
+        
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+            <div id="block1">
+                <input id="additem">
+        </div>
+    </div>
+    
+    <div class="newrow" id="addtoping" placeholder="type here to add toping">
+        <div id="block">
+            <input placeholder="type here to add toping">
+            <!--- Creat a button --->
+            <button id="add_topping" onclick="add_item()">Show pizza</button>
+        </div>
+        <div class="block2">
+            <div id="display_addmenu">
+            </div>
+        </div>
+     </div>
+     <div>
+         <img id="img-responsive" src="Pizza-Toppings.jpeg">
+     </div>
+</body>
+</html>
